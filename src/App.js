@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavVar } from './components/public/NavVar';
+import { Main } from './components/public/Main';
+import { Footer } from './components/public/Footer'
+import { Route, Routes } from 'react-router-dom';
+import Detail from './components/public/Detail';
+import { useEffect, useState } from 'react';
+import RickAndMortyService from './services/RickAndMorty.service';
 
 function App() {
+  const [search, setSearch] = useState("")
+
+  const modificarSearch = (palabraSearch) => {
+    setSearch(palabraSearch);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavVar modificarSearch={modificarSearch} />
+      <Routes>
+        <Route exact path="/" element={<Main search={search} />} />
+        <Route exact path="/detail/:id" element={<Detail />} />
+      </Routes>
+      <Footer />
+      {/* <img src="https://w2g.tv/room/assets/1.8a80cf2b.png" data-w2g="['activeLogo', ['attr', 'src']]" alt="Active Provider"></img> */}
     </div>
   );
 }
