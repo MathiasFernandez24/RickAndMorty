@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { API_RM } from '../../constants/Api.constants'
 import RickAndMortyService from '../../services/RickAndMorty.service'
 import { Cards } from './Cards'
 
@@ -27,7 +26,6 @@ export const Main = (props) => {
         }
         //for ejecuta el llamado a la API por cada pagina que tiene (trae 20 personajes cada pagina)
         for (let i = 1; i <= 42; i++) {
-            console.log(i);
             obtenerDatos(i)
         }
     }, [])
@@ -37,7 +35,6 @@ export const Main = (props) => {
         setPersonajesFiltrados(personajes.filter((p) => p.name.toLowerCase().includes(search.toLowerCase())))
     }, [search])
 
-    console.log("3");
     return (
         <main>
             {personajesFiltrados.length > 0 ?

@@ -1,11 +1,9 @@
-import './App.css';
 import { NavVar } from './components/public/NavVar';
 import { Main } from './components/public/Main';
 import { Footer } from './components/public/Footer'
 import { Route, Routes } from 'react-router-dom';
 import Detail from './components/public/Detail';
-import { useEffect, useState } from 'react';
-import RickAndMortyService from './services/RickAndMorty.service';
+import { useState } from 'react';
 
 function App() {
   const [search, setSearch] = useState("")
