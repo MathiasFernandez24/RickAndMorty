@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import { API_RM } from '../constants/Api.constants'
 
 class RickAndMortyService {
