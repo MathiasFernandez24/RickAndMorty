@@ -15,7 +15,7 @@ export const NavVar = ({ modificarSearch }) => {
                         </ul>
 
                         <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                            <input onChange={({ target }) => { modificarSearch(target.value) }} type="search" class="form-control form-control-dark text-bg" placeholder="Search..." aria-label="Search" />
+                            <input onChange={({ target }) => { modificarSearch(target.value) }} type="search" class="form-control" placeholder="Search..." aria-label="Search" />
                         </div>
                     </div>
                 </div>

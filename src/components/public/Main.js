@@ -7,6 +7,7 @@ export const Main = (props) => {
     const { search } = props
     const [personajesFiltrados, setPersonajesFiltrados] = useState([])
     const [personajes, setPersonajes] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         const array = []
@@ -21,6 +22,7 @@ export const Main = (props) => {
                     setPersonajesFiltrados(array.sort((a, b) => a.id - b.id).filter((p) => p.name.toLowerCase().includes(search.toLowerCase())));
                     //este estado funciona como DB del personajes filtrados, asique lo dejo con todos los personajes
                     setPersonajes(array.sort((a, b) => a.id - b.id));
+                    setIsLoading(true)
                 }
             })
         }
@@ -37,11 +39,15 @@ export const Main = (props) => {
 
     return (
         <main>
-            {personajesFiltrados.length > 0 ?
-                <Cards arrayPersonajes={personajesFiltrados} />
+            {isLoading ?
+                personajesFiltrados.length > 0 ?
+                    <Cards arrayPersonajes={personajesFiltrados} />
+                    :
+                    <h1 class="display-5 fw-bold text-center">No hay coincidencias..</h1>
                 :
-                <h1 class="display-5 fw-bold text-center">No hay coincidencias..</h1>
+                <h4>Cargando...</h4>
             }
+
         </main>
     )
 }
