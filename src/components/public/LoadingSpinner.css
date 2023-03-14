@@ -1,0 +1,23 @@
+.div-padre {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: rgb(143, 103, 181);
+    background: radial-gradient(circle, rgba(50, 0, 62, 1) 100%, rgba(87, 94, 156, 1) 59%, rgba(62, 18, 120, 1) 100%);
+}
+
+.div-hijo {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
+}
+
+.spinnerReactstrap {
+    width: 300px;
+    height: 300px;
+    border: 20px solid currentColor;
+    border-right-color: transparent;
+}

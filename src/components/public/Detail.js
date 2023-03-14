@@ -17,7 +17,7 @@ const Detail = () => {
     return (
         <div class='detail-container'>
             <br />
-            <div class='container'>
+            <div class='container animate__animated  animate__backInDown'>
                 <div class='card-content-container'>
                     <div class="row">
                         <div class="col">
@@ -25,20 +25,21 @@ const Detail = () => {
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h2 class="display-3">Nombre: {detallePersonaje.name}</h2>
-                                <p>Especie: {detallePersonaje.species}</p>
-                                <p class="lead">Origen: {detallePersonaje.origin?.name}</p>
-                                <p class="lead">Genero: {detallePersonaje.gender}</p>
-                                <p class="lead">Status: {detallePersonaje.status}</p>
-                                {id}/826
+                                <h1 class="display-5">Nombre: {detallePersonaje.name}</h1>
+                                <h3>Species: {detallePersonaje.species}</h3>
+                                <h3>Origin: {detallePersonaje.origin?.name}</h3>
+                                <h3>Last Location: {detallePersonaje.location?.name}</h3>
+                                <h3>Gender: {detallePersonaje.gender}</h3>
+                                <h3>Status: {detallePersonaje.status}</h3>
+                                <h3>Character#: {id}/826</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <br />
-            <div class="text-center">
-                <Link to={`/`} type="button" class="btn btn-bg btn-outline-secondary">Volver</Link>
+            <div class="text-center img">
+                <Link to={`/`} type="button" class="btn btn-bg btn-outline-light btn-lg">Volver</Link>
             </div>
             <br />
         </div>

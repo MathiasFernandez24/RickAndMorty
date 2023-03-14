@@ -8,14 +8,14 @@ export const Card = (props) => {
     const { personaje } = props
 
     return (
-        <div className='animate__animated animate__zoomInUp'>
+        <div class="animate__animated animate__pulse animate__faster">
             <Link name="pepitoHonguito" to={`/detail/${personaje.id}`} type="button" class="btn btn-sm ">
-                <div class="col card">
+                <div class="card" >
                     <div className='overflow'>
-                        <img src={personaje.image} className={"card-img-top"} />
+                        <img src={personaje.image} class="card-img-top" alt="..." />
                     </div>
                     <div class="card-body">
-                        <h2 class="card-text">"{personaje.name}"</h2>
+                        <h2 class="card-text">{personaje.name}</h2>
                     </div>
                 </div>
             </Link>

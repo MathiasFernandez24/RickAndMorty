@@ -1,9 +1,12 @@
 .detail-container {
+    height: 90vh;
     background: rgb(1, 1, 28);
     background: linear-gradient(0deg, rgba(1, 1, 28, 1) 16%, rgba(40, 5, 88, 0.9692022072500875) 65%, rgba(50, 0, 62, 1) 100%);
 }
 
 .card-content-container {
+    border-radius: 20px;
+    border: 3px solid black;
     background: rgb(125, 59, 209);
     background: linear-gradient(107deg, rgba(125, 59, 209, 1) 0%, rgba(254, 254, 255, 1) 100%);
 }

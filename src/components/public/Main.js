@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import RickAndMortyService from '../../services/RickAndMorty.service'
 import { Cards } from './Cards'
+import LoadingSpinner from './LoadingSpinner'
 
 
 export const Main = (props) => {
@@ -40,14 +41,14 @@ export const Main = (props) => {
     return (
         <main>
             {isLoading ?
+                // {false ?
                 personajesFiltrados.length > 0 ?
                     <Cards arrayPersonajes={personajesFiltrados} />
                     :
                     <h1 class="display-5 fw-bold text-center">No hay coincidencias..</h1>
                 :
-                <h4>Cargando...</h4>
+                <LoadingSpinner />
             }
-
         </main>
     )
 }
