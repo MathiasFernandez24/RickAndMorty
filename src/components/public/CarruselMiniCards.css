@@ -1,0 +1,10 @@
+.CarruselMiniCards-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    /* height: 200px; */
+    /* padding: 20px; */
+    margin: 10px;
+}

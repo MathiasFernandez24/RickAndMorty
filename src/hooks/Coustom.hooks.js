@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Form } from 'react-router-dom'
 
 export const useUserForm = (estadoInicial = {}) => {
@@ -7,8 +7,6 @@ export const useUserForm = (estadoInicial = {}) => {
 
     const handleChangues = ({ target }) => {
         const { name, value } = target
-        console.log("--", name);
-        console.log("++", value);
 
         setForm({
             ...Form,

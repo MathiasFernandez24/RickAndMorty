@@ -18,7 +18,7 @@ export const Card = (props) => {
                         <h2 class="card-text">{personaje.name}</h2>
                     </div>
                 </div>
-            </Link>
-        </div>
+            </Link >
+        </div >
     )
 }

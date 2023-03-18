@@ -2,17 +2,17 @@ import './Detail.css'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import RickAndMortyService from '../../services/RickAndMorty.service'
+import CarruselMiniCards from './CarruselMiniCards'
 
 const Detail = () => {
     const [detallePersonaje, setDetallePersonaje] = useState({})
-
     const { id } = useParams()
 
     useEffect(() => {
         RickAndMortyService.getCharacterById(id).then((datos) => {
             setDetallePersonaje(datos)
         })
-    }, [])
+    }, [id])
 
     return (
         <div class='detail-container'>
@@ -37,8 +37,8 @@ const Detail = () => {
                     </div>
                 </div>
             </div>
-            <br />
-            <div class="text-center img">
+            <div class="text-center">
+                <CarruselMiniCards idPersonaje={id} />
                 <Link to={`/`} type="button" class="btn btn-bg btn-outline-light btn-lg">Volver</Link>
             </div>
             <br />

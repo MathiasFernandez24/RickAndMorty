@@ -10,3 +10,7 @@
     background: rgb(125, 59, 209);
     background: linear-gradient(107deg, rgba(125, 59, 209, 1) 0%, rgba(254, 254, 255, 1) 100%);
 }
+
+.center {
+    float: left;
+}
