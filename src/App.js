@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/" element={<Main search={search} />} />
           <Route exact path="/detail/:id" element={<Detail />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </StaticContextProvider>
       {/* <img src="https://w2g.tv/room/assets/1.8a80cf2b.png" data-w2g="['activeLogo', ['attr', 'src']]" alt="Active Provider"></img> */}
     </div>
