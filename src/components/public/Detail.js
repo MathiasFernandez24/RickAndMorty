@@ -18,9 +18,9 @@ const Detail = () => {
 
         <div className='detail-container'>
             <div className='card-content-container'>
-                <img src={detallePersonaje.image} class="img-fluid rounded-start" alt="Cargando ..." />
-                <div>
-                    <h1 class="display-5">Nombre: {detallePersonaje.name}</h1>
+                <img src={detallePersonaje.image} alt="Cargando ..." />
+                <div style={{ padding: '15px' }}>
+                    <h1 class="display-5">Name: {detallePersonaje.name}</h1>
                     <h3>Species: {detallePersonaje.species}</h3>
                     <h3>Origin: {detallePersonaje.origin?.name}</h3>
                     <h3>Last Location: {detallePersonaje.location?.name}</h3>
