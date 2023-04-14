@@ -1,9 +1,26 @@
 import React from 'react'
+import './WindowEpisodes.css'
+import Episode from './Episode'
 
-const WindowEpisodes = ({ arrayEpisodes = [] }) => {
+const WindowEpisodes = ({ personajeSelect, comparePersonajeSelect = "" }) => {
+
+
     return (
-        <div>
-            {arrayEpisodes.map(episode => <p>{episode}</p>)}
+        <div className='containerWindowEpisodes'>
+            <h4 style={{ textAlign: 'center', color: 'white' }}>Character - {comparePersonajeSelect ?
+                `# ${personajeSelect.id} & # ${comparePersonajeSelect.id} -  SharedEpisode`
+                :
+                `# ${personajeSelect.id} -Only Episode`
+            }
+            </h4>
+            <div className='windowEpisodes'>
+                {
+                    comparePersonajeSelect ?
+                        personajeSelect.episode?.filter(episodio => comparePersonajeSelect.episode?.includes(episodio)).map(episode => <Episode episodeUrl={episode} />)
+                        :
+                        personajeSelect.episode?.map(episode => <Episode episodeUrl={episode} />)
+                }
+            </div>
         </div>
     )
 }

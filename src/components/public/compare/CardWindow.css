@@ -10,9 +10,16 @@
 }
 
 .cardWindow {
-    background-color: aqua;
+    background-color: beige;
+    transition: 0.1s;
 }
 
+.cardWindow:hover {
+    color: red;
+    cursor: pointer;
+    scale: 0.9;
+    transition: 0.1s;
+}
 
 
 .containerCardWindow {

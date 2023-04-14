@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CardWindow from './CardWindow'
 import './WindowCompare.css'
+import { IconChevronRight, IconChevronLeft } from '@tabler/icons-react';
 
 const WindowCompare = ({ NumeroWindow, onSelectPersonaje, selectPersonaje }) => {
 
@@ -34,9 +35,10 @@ const WindowCompare = ({ NumeroWindow, onSelectPersonaje, selectPersonaje }) => 
     return (
         <div className='containerWindowCompare'>
             <div className='headerWindowCompare'>
-                <button onClick={onPrevPage}>prev</button>
-                <h4>Character #{NumeroWindow} page {page}/42</h4>
-                <button onClick={onNextPage}>next</button>
+                <IconChevronLeft className='arrowWindowCompare' onClick={onPrevPage} />
+                <h3>Character #{NumeroWindow} page {page}/42</h3>
+                <IconChevronRight className='arrowWindowCompare' onClick={onNextPage} />
+
             </div>
             <div className='windowCompare'>
                 {

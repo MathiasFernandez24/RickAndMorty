@@ -10,13 +10,13 @@ const CardWindow = ({ personaje, onSelectPersonaje, isActive }) => {
             onSelectPersonaje(personaje)
             setActive(!active)
         }}>
-            <div className='cardWindow' style={{ backgroundColor: isActive ? 'red' : 'beige' }}>
+            <div className='cardWindow' style={{ color: isActive ? 'red' : 'black' }}>
                 <img src={image} alt="loading" width={130} />
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <p>{name}</p>
+                    <h5>{name}</h5>
                     <div style={{ display: 'flex', flexDirection: 'row' }}>
-                        <p>{status} </p>
-                        <p>- {species}</p>
+                        <h5>{status} </h5>
+                        <h5>- {species}</h5>
                     </div>
                 </div>
             </div>

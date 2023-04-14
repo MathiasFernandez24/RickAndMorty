@@ -1,0 +1,12 @@
+.containerWindowEpisodes {
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: rgb(50, 48, 56);
+}
+
+
+.windowEpisodes {
+    overflow-y: scroll;
+    height: 25vh;
+    width: 33vw;
+}

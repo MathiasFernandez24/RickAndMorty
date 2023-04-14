@@ -1,6 +1,6 @@
 .containerWindowCompare {
     width: 49.5%;
-    background-color: green;
+    background-color: rgb(50, 48, 56);
     height: 400px;
     overflow-y: scroll;
     text-align: center;
@@ -11,7 +11,7 @@
     column-count: 2;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    margin: 5px;
 }
 
 .headerWindowCompare {
@@ -19,4 +19,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: white;
+    height: 40px;
+}
+
+.arrowWindowCompare {
+    stroke-width: 4px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.arrowWindowCompare :hover {
+    transition: 0.3s;
+    color: red;
+    cursor: pointer;
 }
