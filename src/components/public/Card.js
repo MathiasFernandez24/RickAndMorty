@@ -14,7 +14,7 @@ export const Card = (props) => {
                     <img src={personaje.image} class="card-img-top" alt="..." />
                 </div>
                 <div class="card-body">
-                    <h2 class="card-text">{personaje.name}</h2>
+                    <h3 class="card-text">{personaje.name}</h3>
                 </div>
             </div>
         </Link >

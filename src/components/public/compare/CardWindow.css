@@ -1,0 +1,20 @@
+.cardWindow {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    background-color: beige;
+    align-items: center;
+}
+
+.cardWindow {
+    background-color: aqua;
+}
+
+
+
+.containerCardWindow {
+    display: block;
+}

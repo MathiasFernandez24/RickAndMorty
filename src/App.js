@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Detail from './components/public/Detail';
 import { useState } from 'react';
 import { StaticContextProvider } from './context/StaticContext';
+import Compare from './components/public/compare/Compare';
 
 function App() {
   const [search, setSearch] = useState("")
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Main search={search} />} />
           <Route exact path="/detail/:id" element={<Detail />} />
+          <Route exact path="/compare" element={<Compare />} />
         </Routes>
         {/* <Footer /> */}
       </StaticContextProvider>

@@ -1,0 +1,22 @@
+.containerWindowCompare {
+    width: 49.5%;
+    background-color: green;
+    height: 400px;
+    overflow-y: scroll;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.windowCompare {
+    column-count: 2;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.headerWindowCompare {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
