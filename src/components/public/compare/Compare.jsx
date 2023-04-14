@@ -18,14 +18,14 @@ const Compare = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'rgb(18, 18, 18)', height: '88vh' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                {/* <WindowCompare NumeroWindow={1} onSelectPersonaje={onSelectPersonaje1} selectPersonaje={personajeSelect1} /> */}
-                {/* <WindowCompare NumeroWindow={2} onSelectPersonaje={onSelectPersonaje2} selectPersonaje={personajeSelect2} /> */}
+                <WindowCompare NumeroWindow={1} onSelectPersonaje={onSelectPersonaje1} selectPersonaje={personajeSelect1} />
+                <WindowCompare NumeroWindow={2} onSelectPersonaje={onSelectPersonaje2} selectPersonaje={personajeSelect2} />
             </div>
 
             <div style={{ margin: 2, display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                {/* <WindowEpisodes personajeSelect={personajeSelect1} /> */}
-                {/* <WindowEpisodes personajeSelect={personajeSelect1} comparePersonajeSelect={personajeSelect2} /> */}
-                {/* <WindowEpisodes personajeSelect={personajeSelect2} /> */}
+                <WindowEpisodes personajeSelect={personajeSelect1} />
+                <WindowEpisodes personajeSelect={personajeSelect1} comparePersonajeSelect={personajeSelect2} />
+                <WindowEpisodes personajeSelect={personajeSelect2} />
             </div>
         </div>
     )

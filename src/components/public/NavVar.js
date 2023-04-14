@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconBrandGithub, IconBrandLinkedin, IconBrandWhatsapp, IconHome2, IconMailForward } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandWhatsapp, IconMailForward } from '@tabler/icons-react';
 import RyMHome from '../../images/2.png'
 import RyMCompare from '../../images/R&M_Compare.png'
 import { Link } from 'react-router-dom';
