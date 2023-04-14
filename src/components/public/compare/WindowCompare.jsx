@@ -22,12 +22,12 @@ const WindowCompare = ({ NumeroWindow, onSelectPersonaje, selectPersonaje }) => 
     }, [])
 
     const onNextPage = () => {
-        if (page == 42) {
+        if (page === 42) {
             setPage(1)
         } else { setPage(page + 1) }
     }
     const onPrevPage = () => {
-        if (page == 1) {
+        if (page === 1) {
             setPage(42)
         } else { setPage(page - 1) }
     }
@@ -42,10 +42,8 @@ const WindowCompare = ({ NumeroWindow, onSelectPersonaje, selectPersonaje }) => 
             </div>
             <div className='windowCompare'>
                 {
-                    // characters.map(p => <CardWindow personaje={p} key={p.id} selectPersonaje={selectPersonaje} />)
                     characters.map((p, index) => {
-                        // index && setActiveCard(index)
-                        return (<CardWindow personaje={p} key={p.id} onSelectPersonaje={onSelectPersonaje} isActive={index + (page - 1) * 20 + 1 == selectPersonaje.id} />)
+                        return (<CardWindow personaje={p} key={p.id} onSelectPersonaje={onSelectPersonaje} isActive={index + (page - 1) * 20 + 1 === selectPersonaje.id} />)
                     })
                 }
             </div>
