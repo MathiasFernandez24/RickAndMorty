@@ -2,6 +2,7 @@ import React from 'react'
 import { IconBrandGithub, IconBrandLinkedin, IconBrandWhatsapp, IconHome2, IconMailForward } from '@tabler/icons-react';
 import RyMHome from '../../images/2.png'
 import RyMCompare from '../../images/R&M_Compare.png'
+import { Link } from 'react-router-dom';
 
 export const NavVar = ({ modificarSearch }) => {
 
@@ -19,7 +20,7 @@ export const NavVar = ({ modificarSearch }) => {
                             <li><a href="mailto:mathias_fernandez_24@hotmail.com?Subject=He%20visto%20tu%20App%20de%20Rick%20and%20Morty!" class="nav-link px-2 text-white" target={"_blank"}><IconMailForward /></a></li>
                         </ul>
                         <div>
-                            <a href="/compare" class="px-2" > <img src={RyMCompare} alt="cargando" style={{ width: 70, height: 70 }} /> </a>
+                            <Link to="/compare" class="px-2" > <img src={RyMCompare} alt="cargando" style={{ width: 70, height: 70 }} /> </Link>
                             <p>Compare 2</p>
                         </div>
 
