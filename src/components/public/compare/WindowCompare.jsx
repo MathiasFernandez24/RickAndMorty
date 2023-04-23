@@ -36,7 +36,7 @@ const WindowCompare = ({ NumeroWindow, onSelectPersonaje, selectPersonaje }) => 
         <div className='containerWindowCompare'>
             <div className='headerWindowCompare'>
                 <IconChevronLeft className='arrowWindowCompare' onClick={onPrevPage} />
-                <h3>Character #{NumeroWindow} page {page}/42</h3>
+                <h3 style={{ margin: 30 }}>Character #{NumeroWindow} page {page}/42</h3>
                 <IconChevronRight className='arrowWindowCompare' onClick={onNextPage} />
 
             </div>

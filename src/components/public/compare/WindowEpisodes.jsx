@@ -16,7 +16,7 @@ const WindowEpisodes = ({ personajeSelect, comparePersonajeSelect = "" }) => {
             <div className='windowEpisodes'>
                 {
                     comparePersonajeSelect ?
-                        personajeSelect.episode?.filter(episodio => comparePersonajeSelect.episode?.includes(episodio)).map(episode => <Episode episodeUrl={episode} />)
+                        personajeSelect.episode?.filter(episodio => comparePersonajeSelect.episode?.includes(episodio)).map(episode => <Episode episodeUrl={episode} key={episode} />)
                         :
                         personajeSelect.episode?.map(episode => <Episode episodeUrl={episode} />)
                 }
