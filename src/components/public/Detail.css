@@ -1,7 +1,7 @@
 .detail-container {
     background: rgb(1, 1, 28);
     background: linear-gradient(0deg, rgba(1, 1, 28, 1) 16%, rgba(40, 5, 88, 0.9692022072500875) 65%, rgba(50, 0, 62, 1) 100%);
-    height: 88vh;
+    min-height: 88vh;
     width: 100%;
 }
 
@@ -13,8 +13,14 @@
     background: linear-gradient(107deg, rgba(125, 59, 209, 1) 0%, rgba(254, 254, 255, 1) 100%);
     margin: 0px 70px;
     overflow: hidden;
+    /* height: 300px; */
 }
 
 .center {
     float: left;
+}
+
+.imageDetail {
+    width: auto;
+    /* height: 300px; */
 }

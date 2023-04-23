@@ -18,15 +18,15 @@ const Detail = () => {
 
         <div className='detail-container'>
             <div className='card-content-container'>
-                <img src={detallePersonaje.image} alt="Cargando ..." />
-                <div style={{ padding: '15px' }}>
+                <img src={detallePersonaje.image} alt="Cargando ..." className='imageDetail' />
+                <div style={{ paddingLeft: '20px' }}>
                     <h1 class="display-5">Name: {detallePersonaje.name}</h1>
-                    <h3>Species: {detallePersonaje.species}</h3>
-                    <h3>Origin: {detallePersonaje.origin?.name}</h3>
-                    <h3>Last Location: {detallePersonaje.location?.name}</h3>
-                    <h3>Gender: {detallePersonaje.gender}</h3>
-                    <h3>Status: {detallePersonaje.status}</h3>
-                    <h3>Character#: {id}/826</h3>
+                    <h4>Origin: {detallePersonaje.origin?.name}</h4>
+                    <h4>Species: {detallePersonaje.species}</h4>
+                    <h4>Last Location: {detallePersonaje.location?.name}</h4>
+                    <h4>Gender: {detallePersonaje.gender}</h4>
+                    <h4>Status: {detallePersonaje.status}</h4>
+                    <h4>Character#: {id}/826</h4>
                 </div>
             </div>
 
