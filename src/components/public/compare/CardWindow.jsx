@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './CardWindow.css'
 
 const CardWindow = ({ personaje, onSelectPersonaje, isActive }) => {
@@ -6,9 +6,9 @@ const CardWindow = ({ personaje, onSelectPersonaje, isActive }) => {
     const { name, image, status, species } = personaje
     const [active, setActive] = useState(false)
 
-    if (status == 'Alive') { bgColor = "green" }
-    if (status == 'Dead') { bgColor = "red" }
-    if (status == 'unknown') { bgColor = "grey" }
+    if (status === 'Alive') { bgColor = "green" }
+    if (status === 'Dead') { bgColor = "red" }
+    if (status === 'unknown') { bgColor = "grey" }
 
     console.log(bgColor);
     return (
