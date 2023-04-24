@@ -2,7 +2,7 @@
     width: 49.5%;
     background-color: rgb(50, 48, 56);
     height: 50vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     text-align: center;
     border: 3px solid black;
 }

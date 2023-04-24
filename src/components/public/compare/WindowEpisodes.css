@@ -6,7 +6,7 @@
 
 
 .windowEpisodes {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 30vh;
     width: 33vw;
 }
