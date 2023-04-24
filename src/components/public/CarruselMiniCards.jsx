@@ -1,16 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './CarruselMiniCards.css'
 import MiniCard from './MiniCard'
 import 'animate.css';
 import { useParams } from 'react-router-dom';
 import RickAndMortyService from '../../services/RickAndMorty.service';
-import { Context } from '../../context/StaticContext';
 
 
 
 const CarruselMiniCards = () => {
     const [arrayCarrusel, setArrayCarrusel] = useState([])
-    const { globalGifs, setGlobalGifs } = useContext(Context)
     const { id } = useParams()
     const arrayIds = []
 

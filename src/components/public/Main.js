@@ -14,7 +14,7 @@ export const Main = (props) => {
 
     useEffect(() => {
         const array = []
-        if (globalGifs.length == 0) {
+        if (globalGifs.length === 0) {
             setIsLoading(false)
             const obtenerDatos = async (i) => {
                 await RickAndMortyService.getAllCharacters(i).then(r => {
@@ -22,7 +22,7 @@ export const Main = (props) => {
                     array.push(...r.results)
 
                     //solamente si recorrio completo el for, hace el set a los estados
-                    if (i == 42) {
+                    if (i === 42) {
                         //en este estado aplico un sort para ordenarlo y un filtro, para que al volver del detalle siga haciendo el filtro
                         setPersonajesFiltrados(array.sort((a, b) => a.id - b.id).filter((p) => p.name.toLowerCase().includes(search.toLowerCase())));
                         //este estado funciona como DB del personajes filtrados, asique lo dejo con todos los personajes
@@ -46,7 +46,7 @@ export const Main = (props) => {
     return (
         <main>
             {isLoading ?
-                search == "" ?
+                search === "" ?
                     <Cards arrayPersonajes={globalGifs} />
                     :
                     personajesFiltrados.length > 0 ?
